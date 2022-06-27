@@ -78,7 +78,7 @@ function CourseList() {
                 <td>
                   <td>
                     {" "}
-                    {item.multimedias.map((allMultimedias) => (
+                    {item.multimedias.slice(0, 1).map((allMultimedias) => (
                       <img
                         style={{ width: 100 }}
                         src={allMultimedias.filename}
@@ -106,6 +106,10 @@ function CourseList() {
                 <td>
                   <Link to={"/updateProduct/" + item.id}>
                     <span className="update">Update</span>
+                  </Link>
+                  <br /> <br />
+                  <Link to={"/createTraining/" + item.id}>
+                    <span className="create">Create training</span>
                   </Link>
                 </td>
               </tr>

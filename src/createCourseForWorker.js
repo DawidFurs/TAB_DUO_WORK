@@ -44,21 +44,6 @@ function CreateCourseForWorker() {
     });
     result = await result.json();
     console.log("result", items);
-
-    /*const formData = new FormData();
-    formData.append("name", name);
-    formData.append("description", description);
-    formData.append("expense", expense);
-    formData.append("tags[]", tags);
-    formData.append("multimedias", multimedias);
-    let result = await fetch("http://localhost:8080/courses/create", {
-      method: "POST",
-      credentials: "include",
-      body: formData,
-    });
-    console.log(formData);
-    alert("Data has been saved");
-*/
   }
 
   return (
